@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Milestone Report</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script type="text/javascript">
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 5);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+  </script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!--Start Intro-->
+        <div class="flex-row">
+
+          <div class="flex-item flex-column control-group">
+             <button class="custom-button-flat" id="button1" onclick="location.href='index.html#t1'"><img src="img/home.png"><span>Home</span></button>
+             <button class="custom-button-flat" id="button2" onclick="location.href='index.html#t2'"><img src="img/calendar.png"><span>Project Proposal</span></button>
+              <button class="custom-button-flat" id="button3" onclick="location.href='index.html#t3'"><img src="img/terrain.png"><span>Milestone Reports</span></button>
+             <button class="custom-button-flat" id="button3" onclick="location.href='index.html#t4'"><img src="img/collection.png"><span>Data</span></button>
+              <button class="custom-button-flat" id="button4" onclick="location.href='index.html#t5'"><img src="img/play.png"><span>Current Progress</span></button>
+            <p class="text text-large">
+
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h1 class="add-top-margin">Milestone 1 Report (2/1)</h1>
+
+            <h3> Major Changes </h3>
+            <p class="text add-top-margin">
+              There have been some major changes to the project since the last meeting. I have decided to change my project overall. The project proposal is at the link at the top. This project is much different since the previous project and the details are outlined on the previous page. I decided to make this change because this new opportunity only came up recently and I felt as though I was much more passionate about this project than the previous one that I worked on.
+            </p>
+
+            <h3> What Have you Accomplished Since Your Last Meeting </h3>
+             <p class="text add-top-margin">
+              Since my last meeting so far, I have talked with my advisors and set up a project that I will work on. Furthermore, I worked to achieve the first milestone. The work that I have done so far is <a href="index.html#t5">here. This is understanding the data and then simply animating each play to visually see what happens.</a>
+            </p>
+
+            <h3> Meeting your Milestone </h3>
+            <p class="text add-top-margin">
+              I have meet my milestone for this week.
+            </p>
+
+            <h3> Surprises </h3>
+            <p class="text add-top-margin">
+              Since I have changed my project since the last meeting, there were no real suprises. 
+            </p>
+
+            <h3> Looking Ahead </h3>
+            <p class="text add-top-margin">
+              I plan on focusing on annotations for plays pre-snap through various machine learning techniques. 
+            </p>
+
+            <h3> Revisions to Future Milestones </h3>
+            <p class="text add-top-margin">
+              After the first week there are no revisions to my milestones so far. 
+            </p>
+
+            <h3> Resources Needed </h3>
+            <p class="text add-top-margin">
+              I do not need any resources for this next week. 
+            </p>
+
+
+          </div>
+        </div>
+        <!--End Intro-->
+        <!--Start Text Only-->
+
+        <!--End Text Only-->
+        <!--Start Text with Buttons-->
+
+
+
+
+            
+            
+          </div>
+        </div>
+
+        
+        <!--End Text with Buttons-->
+        <!--Start Text with Images and Image buttons-->
+
+
+        
+        <!--End Credits-->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
